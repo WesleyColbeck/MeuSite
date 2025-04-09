@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surpresa</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            overflow: hidden;
+            text-align: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .heart-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 60px;
+            color: red;
+            position: relative;
+        }
+        .heart-button::before {
+            content: '\2764'; /* Unicode para coração */
+            font-size: 120px;
+            display: block;
+        }
+        .heart-button span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+        .heart-button:hover {
+            transform: scale(1.1);
+        }
+        .hidden {
+            display: none;
+        }
+        h1 {
+            font-size: 30px;
+            color: red;
+            text-shadow: 2px 2px 5px white;
+            font-family: 'Comic Sans MS', cursive;
+            margin-top: 20px;
+        }
+        .message {
+            font-size: 19px;
+            font-family: 'Dancing Script', cursive;
+            margin: 20px;
+        }
+        .music-link {
+            margin-top: 20px;
+        }
+        .music-link img {
+            width: 150px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .music-link img:hover {
+            transform: scale(1.1);
+        }
+        .love-text {
+            font-size: 20px;
+            font-family: 'Dancing Script', cursive;
+            margin-top: 20px;
+        }
+        .heart {
+            position: absolute;
+            color: red;
+            font-size: 24px;
+            top: 0;
+            animation: fall linear infinite;
+        }
+        @keyframes fall {
+            from { transform: translateY(0); opacity: 1; }
+            to { transform: translateY(100vh); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="startScreen">
+        <button class="heart-button" onclick="startSurprise()">
+            <span>Click Me</span>
+        </button>
+    </div>
+    <div id="birthdayScreen" class="hidden">
+        <h1>Feliz Aniversário</h1>
+        <p class="message">Parabéns meu amor, você é muito especial para mim e queria agradecer por você ter aparecido na minha vida, queria lembrar que você é incrível, uma pessoa amável e com seu ar, que muda qual um quando estão ao seu lado, queria lembra que amei conhecer você, mesmo que nós não tenhamos assunto, que não nos falemos muito, e que nos distanciamos, eu amo você, amo essa pessoa que você é, você foi uma das melhores pessoas que apareceram na minha vida, se não tiver sido a melhor, prometo está aqui quando você precisar.
+
+E mais uma vez "Feliz Aniversario Princesa".</p>
+        <div class="music-link">
+            <a href="https://open.spotify.com/intl-pt/track/2ux3Sb90r5aA74nLMls1u0" target="_blank">
+                <img src="https://i.scdn.co/image/ab67616d0000b273bbf7e554146d9b741e58ef02" alt="Maria - Matuê">
+            </a>
+        </div>
+        <p class="love-text">Te amo❤️- Ass: Wesley</p>
+    </div>
+    <script>
+        function startSurprise() {
+            document.getElementById('startScreen').classList.add('hidden');
+            document.getElementById('birthdayScreen').classList.remove('hidden');
+            startHearts();
+        }
+        function startHearts() {
+            function createHeart() {
+                const heart = document.createElement('div');
+                heart.classList.add('heart');
+                heart.innerHTML = '❤️';
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.style.top = '-30px';
+                heart.style.animationDuration = Math.random() * 3 + 2 + 's';
+                document.body.appendChild(heart);
+                setTimeout(() => heart.remove(), 5000);
+            }
+            setInterval(createHeart, 300);
+        }
+    </script>
+</body>
+</html>
