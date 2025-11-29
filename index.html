@@ -45,8 +45,11 @@
         }
 
         .carousel img {
-            width: 100%;
-            object-fit: cover;
+    width: 100%;
+    height: auto;        /* mantém proporção automaticamente */
+    max-height: 350px;   /* você pode aumentar ou diminuir */
+    object-fit: contain; /* garante que nunca vai deformar */
+};
         }
 
         @keyframes slide {
@@ -110,6 +113,7 @@
 
 </body>
 </html>
+
 
 
 
