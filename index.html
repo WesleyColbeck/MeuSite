@@ -76,28 +76,6 @@
         .btn-left { left: 5px; }
         .btn-right { right: 5px; }
 
-        /* BOTÃO WHATSAPP NORMAL */
-        .whatsapp {
-            margin: 50px 0 70px 0;
-        }
-
-        .whatsapp a {
-            display: inline-block;
-            background: #25D366;
-            padding: 15px 30px;
-            color: #000;
-            font-size: 22px;
-            font-weight: bold;
-            border-radius: 10px;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-
-        .whatsapp a:hover {
-            background: #1ebe5d;
-            transform: scale(1.05);
-        }
-
         /* BOTÃO FLUTUANTE DO WHATSAPP */
         .whatsapp-float {
             position: fixed;
@@ -122,6 +100,22 @@
         .whatsapp-float:hover {
             transform: scale(1.12);
             background: #1ebe5d;
+        }
+        .neon-box {
+            width: 90%;
+            max-width: 700px;
+            margin: 25px auto;
+            padding: 15px;
+            border-radius: 12px;
+            border: 2px solid #ff4dd8;
+            box-shadow: 0 0 15px #ff4dd8, 0 0 30px #ff4dd8;
+        }
+
+        .neon-box p {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #fff;
+            margin: 0;
         }
 
     </style>
@@ -149,11 +143,14 @@
         <button class="btn btn-right" onclick="next()">❯</button>
     </div>
 
-    <!-- WHATSAPP NORMAL -->
-    <div class="whatsapp">
-        <a href="https://wa.me/5586995956108" target="_blank">
-            Clique Aqui Para Orçamento
-        </a>
+    <!-- TEXTO COM BORDA NEON -->
+    <div class="neon-box">
+        <p>
+            Satisfação em ter você no meu site, me chamo Wesley, também conhecido por "Gosth", tenho 20 anos e trabalho há 3 anos como Barman e Bartender fazendo Drinks. Atendo pedidos para festas de Casamento, Formaturas, Resenhas e diversos tipos de festividades. Caso tenha se interessado, meu contato estará logo abaixo ou basta clicar no ícone do WhatsApp que aparece no canto inferior direito!
+        </p>
+    </div>
+
+        <button class="btn btn-right" onclick="next()">❯</button>
     </div>
 
     <!-- BOTÃO FLUTUANTE -->
@@ -185,8 +182,5 @@
     </script>
 
 </body>
-</html>
-
-
-
-
+    </html>
+    
