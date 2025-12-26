@@ -1,195 +1,208 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardápio de Drinks do Gosth</title>
+<meta charset="UTF-8">
+<title>Presente Especial</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            background: #000;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            color: white;
-            text-align: center;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-        h1 {
-            margin: 25px 0;
-            color: #fff;
-        }
+body{
+    background:#121212;
+    color:#fff;
+}
 
-        h2 {
-            margin: 25px 0;
-            color: #fff;
-        }
-        
-        /* Imagem principal */
-        .main-cardapio img {
-            width: 90%;
-            max-width: 700px;
-            border-radius: 12px;
-            margin-top: 20px;
-            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
-        }
+/* TELAS */
+.screen{
+    min-height:100vh;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+}
 
-        /* CARROSSEL */
-        .carousel-container {
-            width: 90%;
-            max-width: 700px;
-            margin: 40px auto;
-            overflow: hidden;
-            position: relative;
-            border-radius: 12px;
-        }
+.screen.active{
+    display:flex;
+}
 
-        .carousel {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
+/* CARD */
+.card{
+    background:#181818;
+    border-radius:20px;
+    padding:30px;
+    max-width:420px;
+    width:100%;
+    text-align:center;
+}
 
-        .carousel img {
-            width: 100%;
-            max-height: 500px;
-            object-fit: contain;
-            background: #111;
-            padding: 10px;
-            border-radius: 12px;
-        }
+h1{
+    font-size:1.8rem;
+    margin-bottom:15px;
+}
 
-        /* BOTÕES DO CARROSSEL */
-        .btn {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(255,255,255,0.2);
-            border: none;
-            color: white;
-            font-size: 25px;
-            cursor: pointer;
-            padding: 10px 15px;
-            border-radius: 50%;
-            backdrop-filter: blur(4px);
-            transition: 0.3s;
-        }
+p{
+    opacity:.85;
+    margin-bottom:25px;
+}
 
-        .btn:hover {
-            background: rgba(255,255,255,0.35);
-        }
+.green{
+    color:#1db954;
+}
 
-        .btn-left { left: 5px; }
-        .btn-right { right: 5px; }
+.btn{
+    background:#1db954;
+    color:#000;
+    border:none;
+    padding:14px 30px;
+    border-radius:30px;
+    font-weight:bold;
+    cursor:pointer;
+    font-size:1rem;
+}
 
-        /* BOTÃO FLUTUANTE DO WHATSAPP */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 25px;
-            right: 25px;
-            background: #25D366;
-            width: 65px;
-            height: 65px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 0 15px rgba(0,0,0,0.4);
-            z-index: 999;
-            transition: 0.3s;
-        }
+/* CONTEÚDO */
+.content{
+    max-width:480px;
+    margin:auto;
+    width:100%;
+}
 
-        .whatsapp-float img {
-            width: 40px;
-        }
+.block{
+    background:#181818;
+    border-radius:20px;
+    margin-bottom:20px;
+    overflow:hidden;
+}
 
-        .whatsapp-float:hover {
-            transform: scale(1.12);
-            background: #1ebe5d;
-        }
-        .neon-box {
-            width: 90%;
-            max-width: 700px;
-            margin: 25px auto;
-            padding: 15px;
-            border-radius: 12px;
-            border: 2px solid #ff4dd8;
-            box-shadow: 0 0 15px #ff4dd8, 0 0 30px #ff4dd8;
-        }
+.block img{
+    width:100%;
+    display:block;
+}
 
-        .neon-box p {
-            font-size: 18px;
-            line-height: 1.5;
-            color: #fff;
-            margin: 0;
-        }
+.block .text{
+    padding:20px;
+}
 
-    </style>
+/* CONTADOR */
+.counter{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+    text-align:center;
+}
+
+.counter div{
+    background:#202020;
+    padding:15px;
+    border-radius:12px;
+}
+
+.counter strong{
+    font-size:1.5rem;
+    display:block;
+}
+
+/* BOTÃO BRANCO */
+.btn-white{
+    background:#fff;
+    color:#000;
+    border:none;
+    padding:12px 25px;
+    border-radius:25px;
+    font-weight:bold;
+}
+</style>
 </head>
+
 <body>
 
-    <h1>Nosso Cardápio!</h1>
-
-    <h2>Aqui você encontra meu cardápio para qualquer festividade!</h2>
-
-    <!-- IMAGEM PRINCIPAL -->
-    <div class="main-cardapio">
-        <img src="cardapio1.jpg" alt="Cardápio Principal">
+<!-- 🟢 TELA 1 -->
+<div id="screen-start" class="screen active">
+    <div class="card">
+        <h1>Gosth separou um <span class="green">presente especial</span>!</h1>
+        <p>Um momento único feito com carinho para celebrar a nossa jornada</p>
+        <button class="btn" onclick="goTo('screen-story')">Ver Presente</button>
     </div>
+</div>
 
-    <h1>História Sobre os Drinks</h1>
+<!-- 🔴 TELA 2 -->
+<div id="screen-story" class="screen">
+    <div class="content">
 
-    <!-- CARROSSEL -->
-    <div class="carousel-container">
-        <button class="btn btn-left" onclick="prev()">❮</button>
-
-        <div class="carousel" id="carousel">
-            <img src="drink1.jpg" alt="Drink 1">
-            <img src="drink2.jpg" alt="Drink 2">
+        <!-- PLAYER -->
+        <div class="block">
+            <img src="SUA_FOTO_1.jpg">
+            <div class="text">
+                <h3>Sonha Comigo</h3>
+                <p>Zé Neto e Cristiano</p>
+            </div>
         </div>
 
-        <button class="btn btn-right" onclick="next()">❯</button>
+        <!-- SOBRE -->
+        <div class="block">
+            <img src="SUA_FOTO_2.jpg">
+            <div class="text">
+                <h3>Gosth e Julia</h3>
+                <p>Juntos desde 0000</p>
+
+                <div class="counter">
+                    <div><strong>4</strong>Anos</div>
+                    <div><strong>9</strong>Meses</div>
+                    <div><strong>15</strong>Dias</div>
+                    <div><strong>4</strong>Horas</div>
+                    <div><strong>9</strong>Minutos</div>
+                    <div><strong>15</strong>Segundos</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MENSAGEM -->
+        <div class="block" style="background:#b71c1c">
+            <div class="text">
+                <h3>Mensagem especial</h3>
+                <p>
+                    Você é o amor da minha vida e a pessoa que me faz querer ser melhor a cada novo dia ❤️
+                </p>
+                <button class="btn-white">Mostrar Mensagem</button>
+            </div>
+        </div>
+
+        <!-- WRAPPED -->
+        <div class="block">
+            <div class="text" style="text-align:center">
+                <h2>Seu Relacionamento Wrapped</h2>
+                <p>Explore o tempo de vocês</p>
+                <br>
+                <button class="btn" onclick="goTo('screen-wrapped')">Ver Wrapped</button>
+            </div>
+        </div>
+
     </div>
+</div>
 
-    <!-- TEXTO COM BORDA NEON -->
-    <div class="neon-box">
-        <p>
-            Satisfação em ter você no meu site, me chamo Wesley, também conhecido por "Gosth", tenho 20 anos e trabalho há 3 anos como Barman e Bartender fazendo Drinks. Atendo pedidos para festas de Casamento, Formaturas, Resenhas e diversos tipos de festividades. Caso tenha se interessado, meu contato estará logo abaixo ou basta clicar no ícone do WhatsApp que aparece no canto inferior direito!
-        </p>
+<!-- 🟣 TELA 3 -->
+<div id="screen-wrapped" class="screen">
+    <div class="card">
+        <h1><span class="green">Wrapped</span> de Vocês 💚</h1>
+        <p>Aqui vai entrar o conteúdo do Wrapped<br>(vamos montar com as fotos que você mandar)</p>
+        <button class="btn" onclick="goTo('screen-story')">Voltar</button>
     </div>
+</div>
 
-        <button class="btn btn-right" onclick="next()">❯</button>
-    </div>
-
-    <!-- BOTÃO FLUTUANTE -->
-    <a class="whatsapp-float" href="https://wa.me/5586995956108" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
-    </a>
-
-    <script>
-        let index = 0;
-        const carousel = document.getElementById("carousel");
-        const total = carousel.children.length;
-
-        function updateCarousel() {
-            const width = carousel.children[0].clientWidth;
-            carousel.style.transform = `translateX(${-index * width}px)`;
-        }
-
-        function next() {
-            index = (index + 1) % total;
-            updateCarousel();
-        }
-
-        function prev() {
-            index = (index - 1 + total) % total;
-            updateCarousel();
-        }
-
-        window.addEventListener('resize', updateCarousel);
-    </script>
+<script>
+function goTo(id){
+    document.querySelectorAll('.screen').forEach(screen => {
+        screen.classList.remove('active');
+    });
+    document.getElementById(id).classList.add('active');
+}
+</script>
 
 </body>
-    </html>
-    
-
-
+</html>
