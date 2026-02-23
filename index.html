@@ -85,14 +85,35 @@ p {
 
 /* CARDÁPIO */
 .cardapio-img {
-  margin-top: 40px;
+  margin: 30px 0 60px;
   text-align: center;
 }
 
 .cardapio-img img {
   max-width: 100%;
-  border: 1px solid #333;
   border-radius: 6px;
+  border: 1px solid #333;
+}
+
+.cardapio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 30px;
+}
+
+.drink {
+  border: 1px solid #333;
+  padding: 25px;
+  transition: .3s;
+}
+
+.drink:hover {
+  border-color: var(--gold);
+  transform: translateY(-5px);
+}
+
+.drink h3 {
+  font-size: 1.2rem;
 }
 
 /* CONTATO */
@@ -143,9 +164,32 @@ p {
 <section id="cardapio">
   <h2>Cardápio</h2>
 
+  <!-- IMAGEM DO CARDÁPIO -->
   <div class="cardapio-img">
-    <!-- COLOQUE A IMAGEM DO CARDÁPIO AQUI -->
     <img src="cardapio.jpg" alt="Cardápio Gosth Drinks">
+  </div>
+
+  <!-- LISTA DE DRINKS (CONTINUA IGUAL) -->
+  <div class="cardapio-grid">
+    <div class="drink">
+      <h3>Martini</h3>
+    </div>
+
+    <div class="drink">
+      <h3>Margarita</h3>
+    </div>
+
+    <div class="drink">
+      <h3>Negroni</h3>
+    </div>
+
+    <div class="drink">
+      <h3>Mojito</h3>
+    </div>
+
+    <div class="drink">
+      <h3>Caipifrutas (Sem Álcool)</h3>
+    </div>
   </div>
 </section>
 
