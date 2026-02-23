@@ -83,56 +83,16 @@ p {
   background: var(--bg-light);
 }
 
-.historia h3 {
-  margin-top: 40px;
-}
-
 /* CARDÁPIO */
-.cardapio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-  gap: 30px;
+.cardapio-img {
   margin-top: 40px;
+  text-align: center;
 }
 
-.drink {
+.cardapio-img img {
+  max-width: 100%;
   border: 1px solid #333;
-  padding: 25px;
-  transition: .3s;
-}
-
-.drink:hover {
-  border-color: var(--gold);
-  transform: translateY(-5px);
-}
-
-.drink h3 {
-  font-size: 1.2rem;
-}
-
-.drink p {
-  font-size: .9rem;
-}
-
-/* GALERIA */
-.galeria {
-  background: var(--bg-light);
-}
-
-.galeria-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-  gap: 20px;
-}
-
-.galeria-grid img {
-  width: 100%;
-  border-radius: 5px;
-  transition: .3s;
-}
-
-.galeria-grid img:hover {
-  transform: scale(1.05);
+  border-radius: 6px;
 }
 
 /* CONTATO */
@@ -159,63 +119,33 @@ p {
 <section class="hero">
   <h1>Gosth <span>Drinks</span></h1>
   <p>Clássicos não saem de moda. Experiências, sim.</p>
-  <a href="#contato">Solicitar Orçamento</a>
+  <a href="#cardapio">Ver Cardápio</a>
 </section>
 
 <section class="historia">
   <h2>O que faz um clássico ser um clássico?</h2>
+
   <p>Um clássico representa excelência, equilíbrio e identidade. São drinks que atravessam gerações sem perder relevância.</p>
 
   <h3>Eles são bons</h3>
-  <p>Um clássico nasce porque funciona. É simples, equilibrado e memorável.</p>
+  <p>Funcionam porque são equilibrados, simples e memoráveis.</p>
 
   <h3>Eles têm longevidade</h3>
-  <p>Drinks que resistem ao tempo e continuam presentes nos melhores bares do mundo.</p>
+  <p>Resistem ao tempo e continuam presentes nos melhores bares do mundo.</p>
 
   <h3>Eles são reconhecíveis</h3>
-  <p>Cores, copos e sabores que qualquer apreciador identifica à primeira vista.</p>
+  <p>Copos, cores e sabores que qualquer apreciador identifica.</p>
 
   <h3>Eles são memoráveis</h3>
   <p>História, nome e experiência que ficam na memória.</p>
 </section>
 
-<section>
+<section id="cardapio">
   <h2>Cardápio</h2>
 
-  <div class="cardapio-grid">
-    <div class="drink">
-      <h3>Martini</h3>
-      <p>Gin • Vermute Seco</p>
-    </div>
-
-    <div class="drink">
-      <h3>Margarita</h3>
-      <p>Tequila • Licor de Laranja • Limão</p>
-    </div>
-
-    <div class="drink">
-      <h3>Negroni</h3>
-      <p>Gin • Campari • Vermute Rosso</p>
-    </div>
-
-    <div class="drink">
-      <h3>Mojito</h3>
-      <p>Rum • Limão • Hortelã • Açúcar</p>
-    </div>
-
-    <div class="drink">
-      <h3>Caipifruta (Sem Álcool)</h3>
-      <p>Morango • Leite Condensado • Guaraná</p>
-    </div>
-  </div>
-</section>
-
-<section class="galeria">
-  <h2>Eventos</h2>
-  <div class="galeria-grid">
-    <img src="https://images.unsplash.com/photo-1524594227084-b15f1e1e4f2d">
-    <img src="https://images.unsplash.com/photo-1514361892635-eae31d93d7b7">
-    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
+  <div class="cardapio-img">
+    <!-- COLOQUE A IMAGEM DO CARDÁPIO AQUI -->
+    <img src="cardapio.jpg" alt="Cardápio Gosth Drinks">
   </div>
 </section>
 
