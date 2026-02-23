@@ -25,7 +25,6 @@ body {
   background: var(--bg-dark);
   color: var(--text);
   font-family: 'Montserrat', sans-serif;
-  line-height: 1.6;
 }
 
 section {
@@ -35,11 +34,6 @@ section {
 h1, h2, h3 {
   font-family: 'Cinzel', serif;
   color: var(--gold);
-  margin-bottom: 20px;
-}
-
-p {
-  max-width: 800px;
   margin-bottom: 20px;
 }
 
@@ -59,23 +53,13 @@ p {
   font-size: 3.5rem;
 }
 
-.hero span {
-  color: var(--text);
-}
-
 .hero a {
-  display: inline-block;
   margin-top: 30px;
   padding: 15px 40px;
   border: 1px solid var(--gold);
   color: var(--gold);
   text-decoration: none;
-  transition: .3s;
-}
-
-.hero a:hover {
-  background: var(--gold);
-  color: #000;
+  width: fit-content;
 }
 
 /* HISTÓRIA */
@@ -85,8 +69,8 @@ p {
 
 /* CARDÁPIO */
 .cardapio-img {
-  margin: 30px 0 60px;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .cardapio-img img {
@@ -95,25 +79,33 @@ p {
   border: 1px solid #333;
 }
 
-.cardapio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-  gap: 30px;
+.botao-drinks {
+  display: block;
+  margin: 0 auto 60px;
+  padding: 15px 40px;
+  border: 1px solid var(--gold);
+  background: none;
+  color: var(--gold);
+  font-family: 'Cinzel', serif;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
 }
 
-.drink {
-  border: 1px solid #333;
-  padding: 25px;
-  transition: .3s;
+/* CARROSSEL */
+.carrossel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
 }
 
-.drink:hover {
-  border-color: var(--gold);
-  transform: translateY(-5px);
-}
-
-.drink h3 {
-  font-size: 1.2rem;
+.carrossel img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  scroll-snap-align: center;
 }
 
 /* CONTATO */
@@ -130,7 +122,6 @@ p {
   padding: 15px 20px;
   border-radius: 50px;
   text-decoration: none;
-  font-weight: bold;
 }
 </style>
 </head>
@@ -138,73 +129,41 @@ p {
 <body>
 
 <section class="hero">
-  <h1>Gosth <span>Drinks</span></h1>
+  <h1>Gosth Drinks</h1>
   <p>Clássicos não saem de moda. Experiências, sim.</p>
   <a href="#cardapio">Ver Cardápio</a>
 </section>
 
 <section class="historia">
   <h2>O que faz um clássico ser um clássico?</h2>
-
-  <p>Um clássico representa excelência, equilíbrio e identidade. São drinks que atravessam gerações sem perder relevância.</p>
-
-  <h3>Eles são bons</h3>
-  <p>Funcionam porque são equilibrados, simples e memoráveis.</p>
-
-  <h3>Eles têm longevidade</h3>
-  <p>Resistem ao tempo e continuam presentes nos melhores bares do mundo.</p>
-
-  <h3>Eles são reconhecíveis</h3>
-  <p>Copos, cores e sabores que qualquer apreciador identifica.</p>
-
-  <h3>Eles são memoráveis</h3>
-  <p>História, nome e experiência que ficam na memória.</p>
+  <p>Excelência, equilíbrio e identidade.</p>
 </section>
 
 <section id="cardapio">
   <h2>Cardápio</h2>
 
-  <!-- IMAGEM DO CARDÁPIO -->
   <div class="cardapio-img">
-    <img src="cardapio1.jpg" alt="Cardápio Gosth Drinks">
+    <img src="cardapio.jpg" alt="Cardápio Gosth Drinks">
   </div>
 
-  <!-- LISTA DE DRINKS (CONTINUA IGUAL) -->
-  <div class="cardapio-grid">
-    <div class="drink">
-      <h3>Martini</h3>
-    </div>
+  <a class="botao-drinks" href="drinks.html">
+    Ver todos os drinks
+  </a>
 
-    <div class="drink">
-      <h3>Margarita</h3>
-    </div>
-
-    <div class="drink">
-      <h3>Negroni</h3>
-    </div>
-
-    <div class="drink">
-      <h3>Mojito</h3>
-    </div>
-
-    <div class="drink">
-      <h3>Caipifrutas (Sem Álcool)</h3>
-    </div>
+  <div class="carrossel">
+    <!-- FOTOS DOS EVENTOS -->
+    <img src="evento1.jpg">
+    <img src="evento2.jpg">
+    <img src="evento3.jpg">
   </div>
 </section>
 
-<section id="contato" class="contato">
+<section class="contato">
   <h2>Contato</h2>
-  <p>Atendimento para eventos e experiências personalizadas.</p>
-  <p><strong>WhatsApp:</strong> (5586995956108)</p>
+  <p><strong>WhatsApp:</strong> (SEU NÚMERO)</p>
 </section>
 
-<a class="whatsapp" href="https://wa.me/5586995956108" target="_blank">
-  WhatsApp
-</a>
+<a class="whatsapp" href="https://wa.me/55SEUNUMERO">WhatsApp</a>
 
 </body>
 </html>
-
-
-
