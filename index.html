@@ -2,190 +2,325 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gosth Drinks | Coquetelaria para Eventos</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Feliz Aniversário 💖</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
 <style>
-:root {
-  --bg-dark: #0f0f0f;
-  --bg-light: #1a1a1a;
-  --gold: #c9a24d;
-  --text: #eaeaea;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: var(--bg-dark);
-  color: var(--text);
-  font-family: 'Montserrat', sans-serif;
-  line-height: 1.6;
-}
-
-section {
-  padding: 80px 10%;
-}
-
-h1, h2, h3 {
-  font-family: 'Cinzel', serif;
-  color: var(--gold);
-  margin-bottom: 20px;
-}
-
-/* HERO */
-.hero {
-  height: 100vh;
-  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.9)),
-              url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6KzMP7ryPKE1cGc-rzNvluLQnohIcznVEkg&s");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.hero h1 {
-  font-size: 3.5rem;
-}
-
-.hero span {
-  color: var(--text);
-}
-
-.hero a {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 15px 40px;
-  border: 1px solid var(--gold);
-  color: var(--gold);
-  text-decoration: none;
-  transition: .3s;
-}
-
-.hero a:hover {
-  background: var(--gold);
-  color: #000;
-}
-
-/* HISTÓRIA */
-.historia {
-  background: var(--bg-light);
-}
-
-/* CARDÁPIO */
-.cardapio-img {
-  margin: 30px 0;
-  text-align: center;
-}
-
-.cardapio-img img {
-  max-width: 100%;
-  border-radius: 6px;
-  border: 1px solid #333;
-}
-
-/* BOTÃO */
-.ver-drinks {
-  display: block;
-  margin: 40px auto;
-  padding: 15px 40px;
-  border: 1px solid var(--gold);
-  color: var(--gold);
-  text-decoration: none;
-  text-align: center;
-  width: fit-content;
-  transition: .3s;
-}
-
-.ver-drinks:hover {
-  background: var(--gold);
-  color: #000;
-}
-
-/* CARROSSEL */
-.carrossel {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  padding-bottom: 20px;
-}
-
-.carrossel img {
-  height: 250px;
-  border-radius: 6px;
-  border: 1px solid #333;
-}
-
-/* CONTATO */
-.contato {
-  text-align: center;
-}
-
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25d366;
-  color: #000;
-  padding: 15px 20px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: bold;
-}
+:root{--rose:#e0507f;--burg:#7a1f3d;--ink:#4a2b1f;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;min-height:100%;overflow-x:hidden}
+body{font-family:"Segoe UI",Roboto,Arial,sans-serif;color:var(--burg);background:linear-gradient(160deg,#ffeaf1,#ffcfe0);transition:background 1s}
+body.dark{background:#000}
+[hidden]{display:none!important}
+.sr{position:absolute;left:-9999px}
+#hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.heart{position:absolute;top:0;will-change:transform;animation:fall linear infinite}
+@keyframes fall{from{transform:translate3d(0,-12vh,0) rotate(-15deg)}to{transform:translate3d(0,112vh,0) rotate(20deg)}}
+.screen{display:none;position:relative;z-index:1;min-height:100vh;min-height:100dvh;padding:64px 16px 28px;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:14px}
+.screen.active{display:flex;animation:in .7s ease both}
+@keyframes in{from{opacity:0;transform:translateY(14px)}}
+.ttl{font-family:"Dancing Script","Brush Script MT",cursive;font-size:clamp(2rem,9vw,3rem);margin:0;outline:0}
+#s1 .ttl{font-size:clamp(2.8rem,14vw,5rem);text-shadow:0 3px 12px rgba(224,80,127,.25)}
+.deco{font-size:1.6rem;color:var(--rose);letter-spacing:.4em}
+p{margin:0;line-height:1.5}
+.msg{min-height:1.6em;font-weight:600;font-size:1.1rem;max-width:420px}
+.say{animation:in .6s both}
+.btn{font:inherit;font-weight:700;font-size:1.15rem;padding:14px 34px;min-height:48px;border:0;border-radius:999px;color:#fff;background:linear-gradient(135deg,#f0709a,var(--rose));box-shadow:0 6px 16px rgba(224,80,127,.4);cursor:pointer;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(224,80,127,.45)}
+.btn:active{transform:scale(.95)}
+.btn:focus-visible,.key:focus-visible,.cell:focus-visible,#musicBtn:focus-visible{outline:3px solid var(--burg);outline-offset:2px}
+#musicBtn{position:fixed;top:calc(10px + env(safe-area-inset-top,0px));right:10px;z-index:10;font:inherit;font-weight:700;font-size:.9rem;min-height:44px;padding:0 16px;border:0;border-radius:999px;background:#fff;color:var(--burg);box-shadow:0 3px 10px rgba(0,0,0,.25);cursor:pointer}
+#musicBtn:disabled{opacity:.6}
+/* Jogo da velha */
+#board{display:grid;grid-template-columns:repeat(3,min(27vw,104px));gap:8px}
+.cell{aspect-ratio:1;font:inherit;font-size:min(14vw,3.2rem);font-weight:700;border:0;border-radius:18px;background:#fff;color:var(--burg);box-shadow:0 4px 10px rgba(122,31,61,.15);cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0}
+.cell.h{color:var(--rose)}
+.cell.pop{animation:pop .45s}
+.cell.win{background:#ffe0eb;outline:3px solid var(--rose);animation:pulse 1s ease 3}
+.shake{animation:shake .4s}
+@keyframes pop{from{transform:scale(.3)}}
+@keyframes pulse{50%{transform:scale(1.12)}}
+@keyframes shake{25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+/* Forca */
+#gallows{width:min(44vw,160px);height:auto}
+.part{fill:none;stroke:var(--burg);stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1 1;stroke-dashoffset:1;opacity:0}
+.part.on{stroke-dashoffset:0;opacity:1;transition:stroke-dashoffset .7s ease,opacity .05s}
+#slots{display:flex;gap:6px;justify-content:center;flex-wrap:wrap}
+.slot{width:clamp(26px,9vw,38px);height:clamp(38px,11vw,48px);border-bottom:4px solid var(--rose);font-size:clamp(1.4rem,6vw,2rem);font-weight:700;line-height:1.5}
+#kb{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;max-width:390px}
+.key{font:inherit;font-weight:700;width:clamp(34px,11.5vw,44px);height:44px;border:0;border-radius:10px;background:#fff;color:var(--burg);box-shadow:0 2px 6px rgba(122,31,61,.2);cursor:pointer}
+.key.ok{background:#bfe8c8}.key.bad{background:#f3b6c4;opacity:.6}
+/* Caça-palavras */
+#grid{display:grid;width:min(92vw,380px);gap:3px;touch-action:none;user-select:none;-webkit-user-select:none}
+.wc{aspect-ratio:1;display:flex;align-items:center;justify-content:center;background:#fff;border-radius:8px;font-weight:700;font-size:clamp(.85rem,4.4vw,1.25rem)}
+.wc.sel{background:#ffb3cc}
+.wc.found{background:var(--rose);color:#fff;animation:pop .4s}
+#wlist{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;list-style:none;margin:0;padding:0;max-width:380px}
+#wlist li{background:#fff;border-radius:999px;padding:5px 12px;font-weight:700;font-size:.9rem}
+#wlist li.found{background:var(--rose);color:#fff;text-decoration:line-through}
+.burst{position:fixed;left:50%;top:45%;color:var(--rose);font-size:22px;pointer-events:none;z-index:5;animation:burst 1.4s ease-out forwards}
+@keyframes burst{to{transform:translate(var(--x),var(--y)) scale(1.4);opacity:0}}
+/* Carta */
+#s5{justify-content:flex-start;padding:70px 14px 44px}
+.float{animation:float 5s ease-in-out infinite;filter:drop-shadow(0 18px 24px rgba(0,0,0,.85)) drop-shadow(0 0 22px rgba(255,190,150,.12))}
+@keyframes float{50%{transform:translateY(-10px) rotate(.4deg)}}
+#paper{width:min(92vw,520px);padding:36px 28px 42px;color:var(--ink);text-align:left;
+background:radial-gradient(ellipse at 20% 15%,rgba(255,255,255,.35),transparent 50%),radial-gradient(ellipse at 85% 90%,rgba(140,90,40,.28),transparent 55%),repeating-linear-gradient(0deg,rgba(120,80,30,.045) 0 2px,transparent 2px 5px),linear-gradient(135deg,#f6e6bd,#e9cf98);
+clip-path:polygon(0 1%,6% 0,15% 1.2%,30% 0,48% 1%,64% 0,80% 1.2%,100% 0,99% 14%,100% 30%,98.8% 52%,100% 70%,99% 88%,100% 100%,82% 99%,66% 100%,48% 98.8%,30% 100%,14% 99%,0 100%,1% 84%,0 66%,1.2% 46%,0 28%,1% 12%)}
+.ln{display:block;font-family:Caveat,"Brush Script MT",cursive;font-size:clamp(1.35rem,5.6vw,1.75rem);line-height:1.65;min-height:1em;animation:write .9s ease both}
+@keyframes write{from{opacity:0;transform:translateY(6px)}}
+@media (prefers-reduced-motion:reduce){.heart{display:none}*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
 </head>
-
 <body>
+<noscript><p style="padding:24px;text-align:center">Ative o JavaScript para abrir a surpresa 💖</p></noscript>
 
-<section class="hero">
-  <h1>Gosth <span>Drinks</span></h1>
-  <p>Clássicos não saem de moda. Experiências, sim.</p>
-  <a href="#cardapio">Ver Cardápio</a>
+<!-- ================= SUA CARTA / POEMA =================
+     Cole sua mensagem entre as tags abaixo (apague o texto de exemplo).
+     Cada linha vira uma linha da carta. Pode usar acentos e qualquer símbolo. -->
+<script type="text/plain" id="letter-source">
+[COLE AQUI SUA CARTA OU POEMA PERSONALIZADO]
+</script>
+
+<div id="hearts" aria-hidden="true"></div>
+<button id="musicBtn" aria-label="Tocar música">▶ Música</button>
+
+<main>
+<!-- TELA 1 -->
+<section class="screen active" id="s1">
+  <div class="deco" aria-hidden="true">♥ ♡ ♥</div>
+  <h1 class="ttl" tabindex="-1">Feliz Aniversário!</h1>
+  <button class="btn" id="start">Ver Presente</button>
 </section>
 
-<section class="historia"> <h2>O que faz um clássico ser um clássico?</h2> <p>Um clássico representa excelência, equilíbrio e identidade. São drinks que atravessam gerações sem perder relevância.</p> <h3>Eles são bons</h3> <p>Funcionam porque são equilibrados, simples e memoráveis.</p> <h3>Eles têm longevidade</h3> <p>Resistem ao tempo e continuam presentes nos melhores bares do mundo.</p> <h3>Eles são reconhecíveis</h3> <p>Copos, cores e sabores que qualquer apreciador identifica.</p> <h3>Eles são memoráveis</h3> <p>História, nome e experiência que ficam na memória.</p> </section>
-<section id="cardapio">
-  <h2>Cardápio</h2>
-
-  <div class="cardapio-img">
-    <img src="cardapio1.jpg" alt="Cardápio Gosth Drinks">
-  </div>
-
-  <a href="drinks.html" class="ver-drinks">Ver Todos os Drinks</a>
-
-  <div class="carrossel">
-    <img src="evento1.jpg">
-    <img src="evento2.jpg">
-    <img src="evento3.jpg">
-    <img src="evento4.jpg">
-    <img src="evento5.jpg">
-    <img src="evento6.jpg">
-    <img src="evento7.jpg">
-    <img src="evento8.jpg">
-    <img src="evento9.jpg">
-    <img src="evento10.jpg">
-  </div>
+<!-- TELA 2 -->
+<section class="screen" id="s2" inert aria-hidden="true">
+  <h2 class="ttl" tabindex="-1">Vamos jogar?</h2>
+  <p>Complete a linha com o seu coração ♥</p>
+  <div id="board" role="group" aria-label="Jogo da velha"></div>
+  <p class="msg" id="t-msg" aria-live="polite"></p>
+  <button class="btn" id="t-next" hidden>Continuar</button>
 </section>
 
-<section id="contato" class="contato">
-  <h2>Contato</h2>
-  <p>Atendimento para eventos e experiências personalizadas.</p>
-  <p><strong>WhatsApp:</strong> (+55 (86) 99595-6108)</p>
-  <p>© 2021 Wesley Silva. Todos os direitos reservados</p>
+<!-- TELA 3 -->
+<section class="screen" id="s3" inert aria-hidden="true">
+  <h2 class="ttl" tabindex="-1">Vamos para o próximo desafio!</h2>
+  <svg id="gallows" viewBox="0 0 160 200" role="img" aria-label="Desenho da forca">
+    <path class="part" pathLength="1" d="M20 190H100M40 190V15H110V40"/>
+    <circle class="part" pathLength="1" cx="110" cy="55" r="15"/>
+    <path class="part" pathLength="1" d="M110 70V125"/>
+    <path class="part" pathLength="1" d="M110 125L90 160"/>
+    <path class="part" pathLength="1" d="M110 125L130 160"/>
+    <path class="part" pathLength="1" d="M110 85L88 108"/>
+    <path class="part" pathLength="1" d="M110 85L132 108"/>
+  </svg>
+  <div id="slots" aria-label="Palavra secreta"></div>
+  <p id="hinfo"></p>
+  <div id="kb"></div>
+  <p class="msg" id="h-msg" aria-live="polite"></p>
+  <button class="btn" id="h-next" hidden>Continuar</button>
+  <button class="btn" id="h-retry" hidden>Tentar de novo</button>
 </section>
 
-<a class="whatsapp" href="https://wa.me/5586995956108" target="_blank">WhatsApp</a>
+<!-- TELA 4 -->
+<section class="screen" id="s4" inert aria-hidden="true">
+  <h2 class="ttl" tabindex="-1">Encontre as palavras especiais!</h2>
+  <p>Arraste sobre as letras, ou toque na primeira e na última.</p>
+  <div id="grid" aria-label="Caça-palavras"></div>
+  <p id="wcount" aria-live="polite" style="font-weight:700"></p>
+  <ul id="wlist"></ul>
+  <p class="msg" id="w-msg" aria-live="polite"></p>
+  <button class="btn" id="w-next" hidden>Abrir minha surpresa</button>
+</section>
 
+<!-- TELA 5 -->
+<section class="screen" id="s5" inert aria-hidden="true">
+  <h2 class="sr ttl" tabindex="-1">Sua carta</h2>
+  <div class="float"><article id="paper"><div id="letter"></div></article></div>
+</section>
+</main>
+
+<script>
+"use strict";
+/* ================= CONFIGURAÇÃO (edite aqui) ================= */
+const CONFIG={
+  // Tabuleiro 3x3, da esquerda para a direita, de cima para baixo.
+  // "X" = jogador X, "♥" = coração dela, "" = casa vazia.
+  // Deixe corações em duas casas de uma linha e a terceira vazia: essa jogada vence.
+  board:["♥","X","", "X","♥","", "","",""],
+  hangmanWord:"PRINCESA",                 // apenas letras A-Z, sem acentos
+  searchWords:["AMOR","SORRISO","CARINHO","PRINCESA","CORACAO","FELIZ"], // até 9 letras
+  gridSize:9,                             // tamanho do caça-palavras (mín. 9)
+  music:"music.mp3",                      // arquivo de música na mesma pasta
+  fallSpeed:1                             // corações: 1 normal, 2 mais lento, 0.5 mais rápido
+};
+/* ============================================================== */
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const say=(el,t)=>{el.textContent=t;el.classList.remove("say");void el.offsetWidth;el.classList.add("say")};
+
+/* ---- Corações caindo (quantidade fixa, reaproveitados) ---- */
+const HL=["#ffb3c8","#ff8fb1","#f06292","#ffd1dc","#e0507f"],HD=["#5c1530","#7a1f3d","#8c2b4a","#a34a62"];
+function reset(h,first){
+  const d=document.body.classList.contains("dark"),p=d?HD:HL,r=Math.random;
+  h.style.cssText="left:"+r()*100+"%;font-size:"+(10+r()*18)+"px;color:"+p[Math.floor(r()*p.length)]+";opacity:"+(d?.25+r()*.3:.35+r()*.5)+";animation-duration:"+(9+r()*9)*CONFIG.fallSpeed+"s;animation-delay:"+(first?-r()*12:0)+"s";
+}
+for(let i=0;i<18;i++){const h=document.createElement("span");h.className="heart";h.textContent="♥";reset(h,true);h.addEventListener("animationiteration",()=>reset(h,false));$("#hearts").append(h)}
+
+/* ---- Navegação ---- */
+function go(n){
+  $$(".screen").forEach(s=>{const on=s.id==="s"+n;s.classList.toggle("active",on);s.inert=!on;s.setAttribute("aria-hidden",String(!on))});
+  document.body.classList.toggle("dark",n===5);
+  if(n===5){$$(".heart").forEach(h=>reset(h,true));writeLetter()}
+  window.scrollTo(0,0);
+  const t=$("#s"+n+" .ttl");if(t)t.focus({preventScroll:true});
+}
+
+/* ---- Música ---- */
+const bgm=new Audio();bgm.loop=true;bgm.preload="none";bgm.src=CONFIG.music;
+const mb=$("#musicBtn");
+function mbUpdate(){mb.textContent=bgm.paused?"▶ Música":"⏸ Música";mb.setAttribute("aria-label",bgm.paused?"Tocar música":"Pausar música")}
+mb.onclick=()=>{bgm.paused?bgm.play().catch(()=>{}):bgm.pause()};
+bgm.addEventListener("play",mbUpdate);bgm.addEventListener("pause",mbUpdate);
+bgm.addEventListener("error",()=>{mb.textContent="Música indisponível";mb.disabled=true});
+
+/* ---- Tela 1 ---- */
+$("#start").onclick=()=>{bgm.play().catch(()=>{});go(2)};
+
+/* ---- Tela 2: jogo da velha ---- */
+const LINES=[[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];
+let tb=[...CONFIG.board],tDone=false;const bd=$("#board");
+const winLine=b=>LINES.find(l=>l.every(i=>b[i]==="♥"));
+function drawT(){
+  bd.textContent="";
+  tb.forEach((v,i)=>{const c=document.createElement("button");c.className="cell"+(v==="♥"?" h":"");c.textContent=v;
+    c.setAttribute("aria-label","Casa "+(i+1)+": "+(v==="X"?"X":v?"coração":"vazia"));c.onclick=()=>tTap(i);bd.append(c)});
+}
+function tTap(i){
+  if(tDone||tb[i])return;
+  const t=[...tb];t[i]="♥";const w=winLine(t);
+  if(!w){const c=bd.children[i];c.classList.remove("shake");void c.offsetWidth;c.classList.add("shake");say($("#t-msg"),"Hmm… esse ainda não é o lugar certo. Tente outra casinha 💕");return}
+  tb=t;tDone=true;drawT();
+  bd.children[i].classList.add("pop");
+  w.forEach(j=>bd.children[j].classList.add("win"));
+  say($("#t-msg"),"Parabéns, você ganhou o meu coração de presente.");
+  $("#t-next").hidden=false;
+}
+$("#t-next").onclick=()=>go(3);
+
+/* ---- Tela 3: forca ---- */
+const parts=$$("#gallows .part"),MAX=parts.length;let word,hit,miss,hOver;
+"ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").forEach(l=>{const b=document.createElement("button");b.className="key";b.textContent=l;b.dataset.l=l;b.setAttribute("aria-label","Letra "+l);b.onclick=()=>guess(l);$("#kb").append(b)});
+function hInit(){
+  word=CONFIG.hangmanWord.toUpperCase().replace(/[^A-Z]/g,"");hit=new Set();miss=[];hOver=false;
+  parts.forEach(p=>p.classList.remove("on"));
+  $$(".key").forEach(k=>{k.disabled=false;k.className="key"});
+  $("#h-retry").hidden=true;$("#h-next").hidden=true;
+  say($("#h-msg"),"Descubra a palavra secreta 💗");hDraw();
+}
+function hDraw(){
+  $("#slots").innerHTML=[...word].map(c=>'<span class="slot">'+(hit.has(c)?c:"")+"</span>").join("");
+  $("#hinfo").textContent="Erros: "+miss.length+" de "+MAX+(miss.length?" · Usadas: "+miss.join(" "):"");
+}
+function guess(l){
+  if(hOver||hit.has(l)||miss.includes(l))return;
+  const k=$('.key[data-l="'+l+'"]'),m=$("#h-msg");k.disabled=true;
+  if(word.includes(l)){hit.add(l);k.classList.add("ok");say(m,"Boa! Essa letra existe 💕")}
+  else{miss.push(l);k.classList.add("bad");parts[miss.length-1].classList.add("on");say(m,"Ops, essa não tem. Tente outra!")}
+  hDraw();
+  if([...word].every(c=>hit.has(c))){hOver=true;say(m,"Isso! Você descobriu a palavra "+word+" 💖");$("#h-next").hidden=false}
+  else if(miss.length>=MAX){hOver=true;say(m,"Quase! Vamos tentar de novo? 💕");$("#h-retry").hidden=false}
+}
+document.addEventListener("keydown",e=>{
+  if(e.ctrlKey||e.metaKey||e.altKey||!$("#s3").classList.contains("active"))return;
+  if(/^[a-z]$/i.test(e.key))guess(e.key.toUpperCase());
+});
+$("#h-retry").onclick=hInit;
+$("#h-next").onclick=()=>go(4);
+
+/* ---- Tela 4: caça-palavras (horizontal e vertical) ---- */
+const N=Math.max(9,CONFIG.gridSize),WORDS=CONFIG.searchWords.map(w=>w.toUpperCase());
+let remaining=[...WORDS];
+function makeGrid(){
+  const abc="ABCDEFGHIJLMNOPRSTUVZ",order=[...WORDS].sort((a,b)=>b.length-a.length);
+  for(;;){
+    const g=Array.from({length:N},()=>Array(N).fill("")),ok=order.every(w=>{
+      for(let k=0;k<150;k++){
+        const v=Math.random()<.5,r=Math.floor(Math.random()*(v?N-w.length+1:N)),c=Math.floor(Math.random()*(v?N:N-w.length+1));
+        let fit=true;
+        for(let i=0;i<w.length;i++){const x=g[r+(v?i:0)][c+(v?0:i)];if(x&&x!==w[i]){fit=false;break}}
+        if(fit){for(let i=0;i<w.length;i++)g[r+(v?i:0)][c+(v?0:i)]=w[i];return true}
+      }
+      return false;
+    });
+    if(ok)return g.map(row=>row.map(x=>x||abc[Math.floor(Math.random()*abc.length)]));
+  }
+}
+const G=makeGrid(),grid=$("#grid");
+grid.style.gridTemplateColumns="repeat("+N+",1fr)";
+G.forEach((row,r)=>row.forEach((ch,c)=>{const d=document.createElement("div");d.className="wc";d.dataset.r=r;d.dataset.c=c;d.textContent=ch;grid.append(d)}));
+$("#wlist").innerHTML=WORDS.map(w=>'<li data-w="'+w+'">'+w+"</li>").join("");
+const upd=()=>{$("#wcount").textContent=(WORDS.length-remaining.length)+" de "+WORDS.length+" palavras encontradas"};
+let A=null,B=null,drag=false,pend=null;
+const rc=el=>[+el.dataset.r,+el.dataset.c];
+function lineOf(a,b){
+  const dr=b[0]-a[0],dc=b[1]-a[1],n=Math.max(Math.abs(dr),Math.abs(dc));
+  if(dr&&dc&&Math.abs(dr)!==Math.abs(dc))return[a];
+  const sr=Math.sign(dr),sc=Math.sign(dc);
+  return Array.from({length:n+1},(_,i)=>[a[0]+sr*i,a[1]+sc*i]);
+}
+const cellEl=(r,c)=>grid.children[r*N+c];
+function paint(){
+  $$(".wc.sel").forEach(x=>x.classList.remove("sel"));
+  if(A)lineOf(A,B).forEach(([r,c])=>cellEl(r,c).classList.add("sel"));
+  else if(pend)cellEl(pend[0],pend[1]).classList.add("sel");
+}
+function cellAt(e){const el=document.elementFromPoint(e.clientX,e.clientY);return el&&el.dataset&&el.dataset.r!==undefined?el:null}
+function finish(){
+  const cells=lineOf(A,B),s=cells.map(([r,c])=>G[r][c]).join(""),rev=[...s].reverse().join("");
+  const f=remaining.find(w=>w===s||w===rev);
+  A=B=null;pend=null;
+  if(f&&cells.length>1){
+    remaining=remaining.filter(w=>w!==f);
+    cells.forEach(([r,c])=>cellEl(r,c).classList.add("found"));
+    $('#wlist li[data-w="'+f+'"]').classList.add("found");upd();
+    if(!remaining.length){say($("#w-msg"),"Você encontrou todas as palavras! 💖");burst();$("#w-next").hidden=false}
+  }else{grid.classList.remove("shake");void grid.offsetWidth;grid.classList.add("shake")}
+  paint();
+}
+grid.addEventListener("pointerdown",e=>{
+  if(!remaining.length)return;
+  e.preventDefault();const el=cellAt(e);if(!el)return;const p=rc(el);
+  if(pend&&(p[0]!==pend[0]||p[1]!==pend[1])){A=pend;B=p;finish();return}
+  A=B=p;drag=true;pend=null;paint();
+  try{grid.setPointerCapture(e.pointerId)}catch(x){}
+});
+grid.addEventListener("pointermove",e=>{if(!drag)return;const el=cellAt(e);if(el){B=rc(el);paint()}});
+grid.addEventListener("pointerup",()=>{
+  if(!drag)return;drag=false;
+  if(A[0]===B[0]&&A[1]===B[1]){pend=A;A=null;paint()}else finish();
+});
+grid.addEventListener("pointercancel",()=>{drag=false;A=B=pend=null;paint()});
+function burst(){
+  for(let i=0;i<14;i++){
+    const h=document.createElement("span"),a=Math.random()*6.28,d=80+Math.random()*120;
+    h.className="burst";h.textContent="♥";h.style.cssText="--x:"+Math.cos(a)*d+"px;--y:"+Math.sin(a)*d+"px";
+    document.body.append(h);setTimeout(()=>h.remove(),1500);
+  }
+}
+$("#w-next").onclick=()=>go(5);
+
+/* ---- Tela 5: carta ---- */
+function writeLetter(){
+  const box=$("#letter");box.textContent="";
+  $("#letter-source").textContent.trim().split("\n").forEach((t,i)=>{
+    const p=document.createElement("span");p.className="ln";p.textContent=t;
+    p.style.animationDelay=Math.min(i*.35,10)+"s";box.append(p);
+  });
+}
+
+/* ---- Início ---- */
+drawT();hInit();upd();go(1);
+</script>
 </body>
 </html>
-
-
-
-
-
